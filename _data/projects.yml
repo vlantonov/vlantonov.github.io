@@ -1,0 +1,504 @@
+modules:
+- id: backend
+  number: '01'
+  title: Backend & Distributed Systems
+  blurb: Production-shaped services and the messaging, orchestration, and observability layers that hold
+    them together.
+  projects:
+  - name: CommerceSystemDemo
+    owner: vlantonov
+    desc: Layered e-commerce backend with async PostgreSQL access, latency tuning, and full metrics/traces/logs.
+    stack:
+    - Python
+    - FastAPI
+    - PostgreSQL
+    - OpenTelemetry
+    highlight: true
+  - name: ImageProcessingServiceDemo
+    owner: vlantonov
+    desc: Microservices-ready image pipeline with FastAPI, Kafka, Kubernetes, and OpenTelemetry.
+    stack:
+    - Python
+    - Kafka
+    - Kubernetes
+    - OpenTelemetry
+    highlight: true
+  - name: SimpleBankingTaskDemo
+    owner: vlantonov
+    desc: Layered C++ ATM service with HTTP adapter, token auth, and an acceptance/BDD suite driven red-to-green.
+    stack:
+    - C++
+    - Clean Architecture
+    - TDD
+    highlight: true
+  - name: MobileNetworkOperatorDemo
+    owner: vlantonov
+    desc: C++17 billing engine built from a written spec, warnings-as-errors build, full ctest quality
+      gate.
+    stack:
+    - C++17
+    - Domain Modeling
+    - doctest
+    highlight: true
+  - name: XmlJsonServiceDemo
+    owner: vlantonov
+    desc: Web service converting XML to JSON and back.
+    stack:
+    - C++
+    - Web Service
+  - name: ContinueMicroserviceFramework
+    owner: vlantonov
+    desc: Microservice-adapted continuation framework.
+    stack:
+    - PowerShell
+    - Microservices
+  - name: grpc_samples
+    owner: vlantonov
+    desc: Basic gRPC service and client examples.
+    stack:
+    - C++
+    - gRPC
+  - name: KafkaTutorial
+    owner: vlantonov
+    desc: Producer/consumer patterns for Apache Kafka.
+    stack:
+    - C++
+    - Kafka
+  - name: KubernetesTutorial
+    owner: vlantonov
+    desc: Deployment and orchestration walkthroughs on Kubernetes.
+    stack:
+    - Kubernetes
+    - DevOps
+  - name: PrometheusSamples
+    owner: vlantonov
+    desc: Metrics instrumentation and monitoring samples.
+    stack:
+    - C++
+    - Prometheus
+    - Observability
+  - name: SagaPatternExample
+    owner: vladiant
+    desc: Saga pattern examples for distributed transactions.
+    stack:
+    - Python
+    - Saga
+    - Distributed Systems
+  - name: SimpleBankingTask
+    owner: vladiant
+    desc: Earlier ATM-application exercise, precursor to the SimpleBankingTaskDemo.
+    stack:
+    - C++
+  - name: OpenTelemetryExample
+    owner: vladiant
+    desc: Standalone OpenTelemetry instrumentation example.
+    stack:
+    - C#
+    - Observability
+- id: vision
+  number: '02'
+  title: Computer Vision & Image Processing
+  blurb: Classic and modern vision algorithms, from cascade classifiers to deblurring math, plus the utilities
+    that support them.
+  projects:
+  - name: CascadeClassifier
+    owner: vladiant
+    desc: Modernized legacy OpenCV Haar cascade training stack with tools and CI.
+    stack:
+    - C++17
+    - OpenCV
+    - CMake
+    highlight: true
+  - name: ComputerVisionUtils
+    owner: vladiant
+    desc: General-purpose computer vision utilities.
+    stack:
+    - Python
+    - OpenCV
+  - name: ObjectDetectSamples
+    owner: vladiant
+    desc: Object classification and detection samples.
+    stack:
+    - Jupyter
+    - Machine Learning
+  - name: ObjectDetection
+    owner: vlantonov
+    desc: Object detection using classic image features.
+    stack:
+    - Python
+    - Computer Vision
+  - name: BlindDeconvolution
+    owner: vladiant
+    desc: Implementation of blind deconvolution using a normalized sparsity measure.
+    stack:
+    - C++
+    - Image Processing
+  - name: ProjectiveDeblurring
+    owner: vladiant
+    desc: Richardson-Lucy deblurring for scenes under a projective motion path.
+    stack:
+    - C++
+    - Image Processing
+  - name: ImageDeblurring
+    owner: vladiant
+    desc: General image deblurring samples.
+    stack:
+    - C++
+    - Image Processing
+  - name: BlurKernelEstimation
+    owner: vladiant
+    desc: Blur kernel estimation implementation.
+    stack:
+    - C
+    - Image Processing
+  - name: FuzzyAdaptiveBinarization
+    owner: vladiant
+    desc: Fuzzy adaptive binarization implementations.
+    stack:
+    - C++
+    - Image Processing
+  - name: color2gray
+    owner: vladiant
+    desc: Color2Gray algorithm across CUDA, OpenCL, Vulkan, and OpenGL compute backends.
+    stack:
+    - C++
+    - GPU Compute
+  - name: HomographySamples
+    owner: vladiant
+    desc: Homography estimation and warping examples.
+    stack:
+    - C++
+    - OpenCV
+  - name: BarcodeUtils
+    owner: vladiant
+    desc: Barcode processing utilities.
+    stack:
+    - C++
+    - Computer Vision
+  - name: CameraUtils
+    owner: vladiant
+    desc: Camera capture and calibration utilities.
+    stack:
+    - C
+    - Computer Vision
+  - name: Android-Camera-Native-Processor
+    owner: vladiant
+    desc: Native camera frame processing on Android.
+    stack:
+    - C++
+    - Android
+  - name: ShockFilter
+    owner: vlantonov
+    desc: Shock filter implementation for edge-preserving image sharpening.
+    stack:
+    - C++
+    - Image Processing
+- id: gpu
+  number: '03'
+  title: GPU Compute & Graphics
+  blurb: Optimization across every major GPU backend, from fixed-function graphics to general-purpose
+    compute.
+  projects:
+  - name: CUDAtutorial
+    owner: vladiant
+    desc: CUDA tutorial samples.
+    stack:
+    - CUDA
+    - GPU Compute
+  - name: OpenCLtutorial
+    owner: vladiant
+    desc: OpenCL tutorial walkthrough.
+    stack:
+    - C++
+    - OpenCL
+  - name: OpenCLsamples
+    owner: vladiant
+    desc: OpenCL compute samples.
+    stack:
+    - C
+    - OpenCL
+  - name: VulkanTutorial
+    owner: vladiant
+    desc: Vulkan tutorial samples.
+    stack:
+    - C++
+    - Vulkan
+  - name: VulkanSamples
+    owner: vladiant
+    desc: Vulkan code samples.
+    stack:
+    - C++
+    - Vulkan
+  - name: OpenGLtutorial
+    owner: vladiant
+    desc: OpenGL tutorial samples.
+    stack:
+    - C++
+    - OpenGL
+  - name: OpenGLsamples
+    owner: vladiant
+    desc: OpenGL code samples.
+    stack:
+    - C++
+    - OpenGL
+- id: cpp-core
+  number: '04'
+  title: Modern C++ Language & Design
+  blurb: Language-edition tours, design patterns, and idioms that inform how every other project here
+    is built.
+  projects:
+  - name: Cpp23examples
+    owner: vladiant
+    desc: C++23 language feature examples.
+    stack:
+    - C++23
+  - name: Cpp20examples
+    owner: vladiant
+    desc: C++20 language feature examples.
+    stack:
+    - C++20
+  - name: Cpp17examples
+    owner: vladiant
+    desc: C++17 language feature examples.
+    stack:
+    - C++17
+  - name: CppDesignPatterns
+    owner: vladiant
+    desc: Classic design patterns implemented in C++.
+    stack:
+    - C++
+    - Design Patterns
+  - name: CppExceptions
+    owner: vladiant
+    desc: Exception handling samples and idioms.
+    stack:
+    - C++
+  - name: CppFloatPoint
+    owner: vladiant
+    desc: Floating-point arithmetic examples and edge cases.
+    stack:
+    - C++
+  - name: CppParallelSTL
+    owner: vladiant
+    desc: Parallel STL algorithm samples.
+    stack:
+    - C++17
+    - Parallelism
+  - name: DataOrientedSample
+    owner: vladiant
+    desc: Data-oriented design sample in C++.
+    stack:
+    - C++
+    - Performance
+  - name: CppFuzzerExample
+    owner: vladiant
+    desc: Fuzzing setup for a C++ project.
+    stack:
+    - C++
+    - CMake
+    - Fuzzing
+  - name: ConanTutorial
+    owner: vlantonov
+    desc: Conan package manager tutorial for C++.
+    stack:
+    - C++
+    - Conan
+  - name: CppDocumentExample
+    owner: vlantonov
+    desc: C++ code documentation example.
+    stack:
+    - C++
+    - Documentation
+- id: concurrency
+  number: '05'
+  title: Concurrency & Networking
+  blurb: Synchronization strategies, lock-free structures, and the networking and IPC code that ties processes
+    together.
+  projects:
+  - name: CppConcurrencyPatterns
+    owner: vladiant
+    desc: Active object, reactor, lock-free structures, and other concurrency strategies.
+    stack:
+    - C++20
+    - Concurrency
+    highlight: true
+  - name: LockfreeDemo
+    owner: vladiant
+    desc: Lock-free data structure demonstration.
+    stack:
+    - C++
+    - Concurrency
+  - name: CppNetwork
+    owner: vladiant
+    desc: C++ networking samples.
+    stack:
+    - C++
+    - Networking
+  - name: NetworkingInCpp
+    owner: vladiant
+    desc: Networking in C++ based on javidx9's series.
+    stack:
+    - C++
+    - Networking
+  - name: IPCexamples
+    owner: vladiant
+    desc: Inter-process communication examples.
+    stack:
+    - C++
+    - IPC
+  - name: BluetoothSample
+    owner: vladiant
+    desc: Sample Bluetooth programs.
+    stack:
+    - C
+    - Bluetooth
+- id: ci
+  number: '06'
+  title: Build Systems, Testing & CI/CD
+  blurb: Quality gates and pipeline templates across languages, plus the test-framework scaffolding used
+    everywhere else.
+  projects:
+  - name: test_cpp_ci
+    owner: vladiant
+    desc: C++ CI template with static analysis, sanitizers, valgrind, and automated checks.
+    stack:
+    - CI/CD
+    - Sanitizers
+    - Valgrind
+    highlight: true
+  - name: cpp_gtest_gmock_project
+    owner: vladiant
+    desc: C++ template project wired up with gtest and gmock.
+    stack:
+    - C++
+    - GoogleTest
+  - name: cpp_gtest_fakeit_project
+    owner: vladiant
+    desc: C++ template project with gtest and FakeIt mocking.
+    stack:
+    - C++
+    - GoogleTest
+  - name: cpp_doctest_fakeit_project
+    owner: vladiant
+    desc: C++ template project with doctest and FakeIt.
+    stack:
+    - C++
+    - doctest
+  - name: cpp_utest_fakeit_project
+    owner: vladiant
+    desc: C++ template project with utest and FakeIt.
+    stack:
+    - C++
+    - utest
+  - name: gradle_cpp
+    owner: vladiant
+    desc: Gradle build of a C++ shared/static library.
+    stack:
+    - C++
+    - Gradle
+  - name: test_golang_ci
+    owner: vladiant
+    desc: Go CI pipeline template.
+    stack:
+    - Go
+    - CI/CD
+  - name: test_java_ci
+    owner: vladiant
+    desc: Java CI pipeline template.
+    stack:
+    - Java
+    - CI/CD
+  - name: test_python_ci
+    owner: vladiant
+    desc: Python CI pipeline template.
+    stack:
+    - Python
+    - CI/CD
+  - name: cmake_simple_demo
+    owner: vlantonov
+    desc: Including a library via CMake's ExternalProject_Add.
+    stack:
+    - CMake
+- id: ml
+  number: '07'
+  title: Machine Learning & Data
+  blurb: Applied ML, classic OpenCV learning algorithms, and a foray into quantitative/algorithmic trading.
+  projects:
+  - name: MachineLearningUtils
+    owner: vladiant
+    desc: Snippets and utilities for machine and deep learning.
+    stack:
+    - Jupyter
+    - Machine Learning
+  - name: OpenCVMLsamples
+    owner: vladiant
+    desc: OpenCV's classic machine learning module in practice.
+    stack:
+    - Python
+    - OpenCV
+  - name: SoftUniMachineLearning2019
+    owner: vladiant
+    desc: Coursework from SoftUni's Machine Learning program.
+    stack:
+    - Jupyter
+    - Machine Learning
+  - name: SoftUniDeepLearning2019
+    owner: vladiant
+    desc: Coursework from SoftUni's Deep Learning program.
+    stack:
+    - Jupyter
+    - Deep Learning
+  - name: AlgorithmicTrading
+    owner: vladiant
+    desc: Snippets and utilities for algorithmic trading.
+    stack:
+    - Jupyter
+    - Quant
+- id: data-robotics
+  number: 08
+  title: Databases & Robotics
+  blurb: Spatial data structures, SQL fundamentals, and a first pass at the Robot Operating System.
+  projects:
+  - name: SQLtutorial
+    owner: vlantonov
+    desc: SQL fundamentals tutorial.
+    stack:
+    - SQL
+  - name: KDTree
+    owner: vlantonov
+    desc: k-d tree code sample for nearest-neighbour search.
+    stack:
+    - C++
+    - Data Structures
+  - name: QuadTreeSample
+    owner: vlantonov
+    desc: Quad tree code sample for spatial partitioning.
+    stack:
+    - C++
+    - Data Structures
+  - name: ros_samples
+    owner: vlantonov
+    desc: Various ROS (Robot Operating System) samples.
+    stack:
+    - CMake
+    - Robotics
+- id: polyglot
+  number: 09
+  title: Multi-Language Exploration
+  blurb: Deliberate excursions outside C++ — enough to read, review, and integrate with these ecosystems.
+  projects:
+  - name: GolangSamples
+    owner: vladiant
+    desc: Various Go language samples.
+    stack:
+    - Go
+  - name: JavaSamples
+    owner: vladiant
+    desc: Java language samples.
+    stack:
+    - Java
+  - name: KotlinSamples
+    owner: vladiant
+    desc: Kotlin language samples.
+    stack:
+    - Kotlin

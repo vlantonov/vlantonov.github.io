@@ -1,0 +1,15 @@
+<div class="ticker mono small" id="build-ticker" aria-hidden="true">
+  <ul class="ticker__lines">
+    {% assign flat = "" | split: "" %}
+    {% for module in site.data.projects.modules %}
+      {% for p in module.projects %}
+        {% if p.highlight %}
+          {% assign flat = flat | push: p %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    {% for p in flat %}
+    <li>&gt; linking <span class="ticker__target">{{ p.name }}</span><span class="ticker__dots">…</span><span class="ticker__ok">done</span></li>
+    {% endfor %}
+  </ul>
+</div>

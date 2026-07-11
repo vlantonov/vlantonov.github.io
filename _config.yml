@@ -1,0 +1,41 @@
+title: "vlantonov // build manifest"
+tagline: "Vladislav Antonov — Senior C++ Developer & Software Architect"
+description: >-
+  Portfolio of production-shaped C++ systems, computer vision pipelines, and
+  distributed backends by Vladislav Antonov.
+author: Vladislav Antonov
+url: "https://vlantonov.github.io"
+
+# Social / cross-links. Update these if handles change.
+github_primary: vlantonov     # this site's own account (polished/demo repos)
+github_secondary: vladiant    # exploration/learning account, cross-linked per project
+gitlab_user: vladiant
+linkedin_url: "https://www.linkedin.com/in/vladiant/"
+sibling_site: "https://vladiant.github.io/"   # the other portfolio front page
+
+# Manifest summary numbers shown in the hero. Kept here (not hardcoded in HTML)
+# so they can be updated in one place when _data/projects.yml changes.
+years_experience: "13+"
+primary_languages: "C++17/20/23"
+
+markdown: kramdown
+theme: null            # fully custom layout, no remote theme
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+sass:
+  style: compressed
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - AGENTS.md
+  - node_modules

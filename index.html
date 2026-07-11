@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+{% assign all_projects = "" | split: "" %}
+{% for module in site.data.projects.modules %}
+  {% for p in module.projects %}
+    {% assign all_projects = all_projects | push: p %}
+  {% endfor %}
+{% endfor %}
+
+{% assign all_tags = "" | split: "" %}
+{% for p in all_projects %}
+  {% for t in p.stack %}
+    {% assign all_tags = all_tags | push: t %}
+  {% endfor %}
+{% endfor %}
+{% assign all_tags = all_tags | uniq | sort %}
+
+<section class="hero">
+  <div class="wrap">
+    <p class="mono eyebrow">build manifest // vlantonov.github.io</p>
+    <h1>{{ site.tagline }}</h1>
+    <p class="hero__lede">
+      {{ site.years_experience }} years building high-performance {{ site.primary_languages }} backends,
+      computer vision pipelines, and distributed microservices — compiled here into
+      {{ all_projects.size }} working targets across {{ site.data.projects.modules.size }} modules.
+    </p>
+
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="#modules">View modules</a>
+      <a class="btn" href="{{ site.linkedin_url }}" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/{{ site.github_primary }}" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+
+    {% include ticker.html %}
+
+    <p class="mono small manifest-line">
+      # targets: {{ all_projects.size }}  ·  modules: {{ site.data.projects.modules.size }}  ·  primary: {{ site.primary_languages }}  ·  status: <span class="ok">ok</span>
+    </p>
+  </div>
+</section>
+
+<section class="filter-bar" aria-label="Filter targets by stack">
+  <div class="wrap">
+    <p class="mono eyebrow">// filter by stack</p>
+    <div class="filter-bar__chips" id="filter-chips">
+      <button type="button" class="chip is-active" data-tag="all">All</button>
+      {% for tag in all_tags %}
+      <button type="button" class="chip" data-tag="{{ tag }}">{{ tag }}</button>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="modules" class="modules">
+  <div class="wrap">
+    {% for module in site.data.projects.modules %}
+    <div class="module" id="{{ module.id }}">
+      <div class="module__head">
+        <span class="mono module__number">{{ module.number }}</span>
+        <div>
+          <h2>{{ module.title }}</h2>
+          <p class="module__blurb">{{ module.blurb }}</p>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        {% for p in module.projects %}
+        {% assign tag_string = p.stack | join: "," %}
+        <article class="card{% if p.highlight %} card--highlight{% endif %}" data-tags="{{ tag_string }}">
+          <div class="card__head">
+            <h3><a href="https://github.com/{{ p.owner }}/{{ p.name }}" target="_blank" rel="noopener">{{ p.name }}</a></h3>
+            {% if p.highlight %}<span class="badge mono">featured</span>{% endif %}
+          </div>
+          <p class="card__desc">{{ p.desc }}</p>
+          <div class="card__stack">
+            {% for t in p.stack %}<span class="chip chip--tag mono">{{ t }}</span>{% endfor %}
+          </div>
+          <p class="card__owner mono small muted">
+            {% if p.owner == site.github_primary %}
+              source: this account
+            {% else %}
+              source: <a href="https://github.com/{{ p.owner }}" target="_blank" rel="noopener">github.com/{{ p.owner }}</a>
+            {% endif %}
+          </p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
