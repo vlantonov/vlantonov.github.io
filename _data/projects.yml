@@ -95,6 +95,73 @@ modules:
     stack:
     - C#
     - Observability
+  - name: pcapgrammar
+    owner: vlantonov
+    desc: Protocol conformance checker for pcap-based traffic analysis.
+    stack:
+    - C++
+    - Networking
+  - name: voipscope
+    owner: vlantonov
+    desc: Standalone decoder that ingests pcap, follows SIP dialogs and correlated RTP streams, then emits CDR-style JSON.
+    stack:
+    - C++
+    - Networking
+  - name: dpdkflow
+    owner: vlantonov
+    desc: Line-rate flow counter.
+    stack:
+    - C
+    - Networking
+  - name: PythonEventSourcingKit
+    owner: vlantonov
+    desc: Minimal reusable event-sourcing building block in Python.
+    stack:
+    - Python
+    - Distributed Systems
+  - name: GoRobotControlDemo
+    owner: vlantonov
+    desc: Golang service demonstrating a simulated fleet of robots.
+    stack:
+    - Go
+    - Robotics
+  - name: flowforge
+    owner: vlantonov
+    desc: Plugin-based packet inspection engine.
+    stack:
+    - C++
+    - Networking
+  - name: cpp-rest-microservice-template
+    owner: vlantonov
+    desc: C++ REST microservice skeleton.
+    stack:
+    - C++
+    - Microservices
+  - name: packetpipe
+    owner: vlantonov
+    desc: Kafka, Avro, and Prometheus streaming bridge.
+    stack:
+    - C++
+    - Kafka
+    - Prometheus
+  - name: shmring
+    owner: vlantonov
+    desc: Header-only SPSC shared-memory ring buffer.
+    stack:
+    - C++
+    - Concurrency
+  - name: polycpp-template
+    owner: vlantonov
+    desc: Multi-module C++ build template.
+    stack:
+    - C++
+    - CMake
+  - name: cpp-microservice-template
+    owner: vlantonov
+    desc: C++ microservice scaffold.
+    stack:
+    - C++
+    - Microservices
 - id: vision
   number: '02'
   title: Computer Vision & Image Processing
