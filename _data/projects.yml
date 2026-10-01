@@ -52,6 +52,27 @@ modules:
     stack:
     - PowerShell
     - Microservices
+  - name: ChoreographySagaDemo
+    owner: vlantonov
+    desc: Choreography-based sagas for event-driven business workflows.
+    stack:
+    - Python
+    - Saga
+    - Distributed Systems
+  - name: CppGrpcKafkaMicroservice
+    owner: vlantonov
+    desc: C++ gRPC front end with Kafka-backed event flow and service orchestration.
+    stack:
+    - C++
+    - gRPC
+    - Kafka
+  - name: GoGrpcKafkaMicroservice
+    owner: vlantonov
+    desc: Go microservice with gRPC APIs and Kafka event integration.
+    stack:
+    - Go
+    - gRPC
+    - Kafka
   - name: grpc_samples
     owner: vlantonov
     desc: Basic gRPC service and client examples.
@@ -119,6 +140,34 @@ modules:
     stack:
     - Python
     - Distributed Systems
+  - name: CppEventSourcingKit
+    owner: vlantonov
+    desc: Minimal append-only event store, aggregate replay, and snapshotting in C++.
+    stack:
+    - C++
+    - Event Sourcing
+    - Distributed Systems
+  - name: OrderSagaDemo
+    owner: vlantonov
+    desc: Domain-driven saga workflow for order orchestration and compensating actions.
+    stack:
+    - Python
+    - Saga
+    - Distributed Systems
+  - name: TradingOrderBookSim
+    owner: vlantonov
+    desc: Simulated trading order book with matching, latency, and concurrency behavior.
+    stack:
+    - Python
+    - Trading
+    - Distributed Systems
+  - name: cv-inference-server
+    owner: vlantonov
+    desc: Real-time CV model serving with batching, GPU scheduling, and worker orchestration.
+    stack:
+    - Python
+    - Computer Vision
+    - Inference
   - name: GoRobotControlDemo
     owner: vlantonov
     desc: Golang service demonstrating a simulated fleet of robots.
@@ -188,6 +237,18 @@ modules:
     stack:
     - Jupyter
     - Machine Learning
+  - name: DepthEstimationDemo
+    owner: vladiant
+    desc: Depth estimation workflow and utility demos for spatial scene understanding.
+    stack:
+    - Python
+    - Computer Vision
+  - name: PointCloudPipeline
+    owner: vladiant
+    desc: Point-cloud processing pipeline for 3D scenes and geometry extraction.
+    stack:
+    - Python
+    - Computer Vision
   - name: ObjectDetection
     owner: vlantonov
     desc: Object detection using classic image features.
@@ -308,6 +369,13 @@ modules:
     stack:
     - C++
     - OpenGL
+  - name: LaserHardeningSim
+    owner: vladiant
+    desc: Small simulation of laser transformation hardening for a low-carbon steel sheet.
+    stack:
+    - C++
+    - Simulation
+    - GPU Compute
 - id: cpp-core
   number: '04'
   title: Modern C++ Language & Design
@@ -364,6 +432,13 @@ modules:
     - C++
     - CMake
     - Fuzzing
+  - name: cpp-perf-benchmarks
+    owner: vladiant
+    desc: Reproducible micro and macro C++ benchmarks with methodology and tooling.
+    stack:
+    - C++
+    - Benchmarking
+    - Performance
   - name: ConanTutorial
     owner: vlantonov
     desc: Conan package manager tutorial for C++.
@@ -401,6 +476,13 @@ modules:
     stack:
     - C++
     - Networking
+  - name: zero-copy-networking
+    owner: vlantonov
+    desc: High-throughput zero-copy networking experiments and transport sketches.
+    stack:
+    - C++
+    - Networking
+    - Performance
   - name: NetworkingInCpp
     owner: vladiant
     desc: Networking in C++ based on javidx9's series.
@@ -497,6 +579,20 @@ modules:
     stack:
     - Jupyter
     - Machine Learning
+  - name: EdgeInferenceBenchmark
+    owner: vladiant
+    desc: Edge inference benchmarks for throughput, latency, and model efficiency.
+    stack:
+    - Python
+    - Machine Learning
+    - Performance
+  - name: MLOpsPipelineDemo
+    owner: vladiant
+    desc: End-to-end MLOps pipeline demo with training, packaging, and deployment hooks.
+    stack:
+    - Python
+    - Machine Learning
+    - MLOps
   - name: OpenCVMLsamples
     owner: vladiant
     desc: OpenCV's classic machine learning module in practice.
@@ -569,3 +665,10 @@ modules:
     desc: Kotlin language samples.
     stack:
     - Kotlin
+  - name: rust-cpp-interop-demo
+    owner: vladiant
+    desc: Rust and C++ interop sample for FFI boundaries and shared-memory integration.
+    stack:
+    - Rust
+    - C++
+    - Interop
