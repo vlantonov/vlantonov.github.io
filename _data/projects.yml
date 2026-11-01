@@ -168,6 +168,13 @@ modules:
     - Python
     - Computer Vision
     - Inference
+  - name: cv-inference-platform
+    owner: vladiant
+    desc: Distributed image-ingestion platform with gRPC, FastAPI, event-driven flow, and Kubernetes deployment.
+    stack:
+    - Python
+    - Computer Vision
+    - Distributed Systems
   - name: GoRobotControlDemo
     owner: vlantonov
     desc: Golang service demonstrating a simulated fleet of robots.
@@ -382,6 +389,11 @@ modules:
   blurb: Language-edition tours, design patterns, and idioms that inform how every other project here
     is built.
   projects:
+  - name: Cpp26examples
+    owner: vladiant
+    desc: C++26 language feature examples.
+    stack:
+    - C++26
   - name: Cpp23examples
     owner: vladiant
     desc: C++23 language feature examples.
@@ -402,6 +414,12 @@ modules:
     desc: Classic design patterns implemented in C++.
     stack:
     - C++
+    - Design Patterns
+  - name: ModernCppDesignPatterns
+    owner: vladiant
+    desc: Gang-of-Four design patterns rewritten with modern C++20 and later idioms.
+    stack:
+    - C++20
     - Design Patterns
   - name: CppExceptions
     owner: vladiant
@@ -568,6 +586,20 @@ modules:
     desc: Including a library via CMake's ExternalProject_Add.
     stack:
     - CMake
+  - name: cpp-build-systems-compared
+    owner: vladiant
+    desc: The same C++ project built four ways to compare CMake, Bazel, Meson, and xmake.
+    stack:
+    - C++
+    - Build Systems
+    - CMake
+  - name: cpp-fuzzing-harness
+    owner: vladiant
+    desc: Coverage-guided fuzzing harness integrating libFuzzer, AFL++, and sanitizers under CI.
+    stack:
+    - C++
+    - Fuzzing
+    - Sanitizers
 - id: ml
   number: '07'
   title: Machine Learning & Data
@@ -672,3 +704,23 @@ modules:
     - Rust
     - C++
     - Interop
+- id: security
+  number: '10'
+  title: Security & Cryptography
+  blurb: Constant-time primitives, secure-coding practice, and the cryptography that underpins trustworthy
+    services.
+  projects:
+  - name: CppCryptoPrimitives
+    owner: vladiant
+    desc: Constant-time C++ implementations of common cryptographic primitives with side-channel awareness.
+    stack:
+    - C++17
+    - Cryptography
+    - Security
+  - name: CppCyberSec
+    owner: vladiant
+    desc: C++ cybersecurity examples spanning encryption, TLS, authentication, and secure coding.
+    stack:
+    - C++
+    - Security
+    - OpenSSL
